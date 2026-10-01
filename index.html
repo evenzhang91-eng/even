@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Even Nathaniel - Portofolio Coding</title>
+  <meta name="description" content="Portofolio coding Even Nathaniel, mahasiswa Universitas Internasional Batam asal Dumai, Riau.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#beranda">Even Nathaniel</a>
+    <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="nav">
+      <a href="#tentang">Tentang</a>
+      <a href="#keahlian">Keahlian</a>
+      <a href="#proyek">Proyek</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="beranda" class="hero">
+      <p class="hero-intro">Halo, saya</p>
+      <h1>Even Nathaniel</h1>
+      <p class="hero-role">Mahasiswa dan pembuat website, aplikasi, dan program kecil yang berguna.</p>
+
+      <figure class="route" aria-label="Rute dari Dumai, Riau ke Batam">
+        <svg viewBox="0 0 600 90" role="img" aria-hidden="true">
+          <path class="route-line" d="M30 60 C 150 10, 250 90, 360 40 S 520 30, 570 55"/>
+          <circle cx="30" cy="60" r="8" class="dot dot-start"/>
+          <circle cx="570" cy="55" r="8" class="dot dot-end"/>
+        </svg>
+        <div class="route-labels">
+          <span><strong>Dumai</strong> Riau, tempat saya berasal</span>
+          <span><strong>Batam</strong> Universitas Internasional Batam</span>
+        </div>
+      </figure>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#proyek">Lihat proyek</a>
+        <a class="btn" href="#kontak">Hubungi saya</a>
+      </div>
+    </section>
+
+    <section id="tentang" class="section">
+      <h2>Tentang saya</h2>
+      <div class="about">
+        <p>Saya Even Nathaniel, berasal dari Dumai, Riau, dan sekarang berkuliah di Universitas Internasional Batam. Saya belajar coding dengan membuat hal nyata: halaman web, alat bantu kecil, dan proyek kuliah.</p>
+        <p>Saya suka memecah masalah menjadi langkah kecil, lalu menuliskannya sebagai kode yang rapi dan mudah dibaca.</p>
+      </div>
+    </section>
+
+    <section id="keahlian" class="section">
+      <h2>Keahlian</h2>
+      <div class="skills">
+        <div>
+          <h3>Web</h3>
+          <ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </div>
+        <div>
+          <h3>Bahasa pemrograman</h3>
+          <ul><li>Python</li><li>Java</li><li>C++</li></ul>
+        </div>
+        <div>
+          <h3>Alat</h3>
+          <ul><li>Git dan GitHub</li><li>VS Code</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyek" class="section">
+      <h2>Proyek</h2>
+      <p class="note">Ini contoh proyek. Ganti judul, deskripsi, dan tautan dengan karya kamu.</p>
+      <div class="filters" role="group" aria-label="Filter proyek">
+        <button class="filter is-active" data-filter="semua">Semua</button>
+        <button class="filter" data-filter="web">Web</button>
+        <button class="filter" data-filter="python">Python</button>
+        <button class="filter" data-filter="java">Java</button>
+      </div>
+      <div class="projects">
+        <article class="project" data-category="web">
+          <h3>Website Portofolio</h3>
+          <p>Situs pribadi dengan HTML, CSS, dan JavaScript yang terpisah dan responsif.</p>
+          <p class="tags">HTML, CSS, JavaScript</p>
+          <a href="#" class="project-link">Lihat kode</a>
+        </article>
+        <article class="project" data-category="python">
+          <h3>Pencatat Pengeluaran</h3>
+          <p>Program Python untuk mencatat dan merangkum pengeluaran harian.</p>
+          <p class="tags">Python</p>
+          <a href="#" class="project-link">Lihat kode</a>
+        </article>
+        <article class="project" data-category="java">
+          <h3>Aplikasi Kasir Sederhana</h3>
+          <p>Aplikasi Java berbasis konsol untuk menghitung belanja dan kembalian.</p>
+          <p class="tags">Java</p>
+          <a href="#" class="project-link">Lihat kode</a>
+        </article>
+        <article class="project" data-category="web">
+          <h3>Daftar Tugas</h3>
+          <p>Aplikasi to-do list yang menyimpan data di browser.</p>
+          <p class="tags">HTML, CSS, JavaScript</p>
+          <a href="#" class="project-link">Lihat kode</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="kontak" class="section">
+      <h2>Kontak</h2>
+      <p>Punya proyek atau ingin berkenalan? Kirim pesan, nanti terbuka di aplikasi email kamu.</p>
+      <form id="contact-form" class="contact" novalidate>
+        <label>Nama
+          <input type="text" name="nama" required autocomplete="name">
+        </label>
+        <label>Pesan
+          <textarea name="pesan" rows="4" required></textarea>
+        </label>
+        <p class="form-error" id="form-error" role="alert"></p>
+        <button class="btn btn-primary" type="submit">Kirim pesan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Even Nathaniel, Universitas Internasional Batam. <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
